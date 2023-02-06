@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using TodoApp.Models;
@@ -21,9 +22,16 @@ namespace TodoApp.Controllers
         {
             //Läser in json
             var JsonString = System.IO.File.ReadAllText(@"todolist.json");
+
+
+
+
+
             //Konverterar till lista av typen Todos
             var JsonObj = JsonConvert.DeserializeObject<List<Todos>>(JsonString);
 
+  
+            //Parameter-anpassning med json-objektet
             return View(JsonObj);
         }
 
@@ -57,10 +65,15 @@ namespace TodoApp.Controllers
             //Kontroll om formulär är korrekt ifyllt
             if (ModelState.IsValid)
             {
+
                 //Läser in json
                 var JsonString = System.IO.File.ReadAllText(@"todolist.json");
                 //Konverterar till lista av typen Todos
                 var JsonObj = JsonConvert.DeserializeObject<List<Todos>>(JsonString);
+
+
+                //Tiden när uppgiften läggs till sparas i CreatedDate
+                model.CreatedDate = DateTime.Now;
 
 
                 //Om jsonObj inte är null läggs objektet till
@@ -77,6 +90,5 @@ namespace TodoApp.Controllers
 
             return View();
         }
-
     }
 }

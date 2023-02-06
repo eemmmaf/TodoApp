@@ -17,11 +17,12 @@
                 </th>
                 <th>Datum</th>
                 <th>Prioritet</th>
+                <th>Beskrivning</th>
                 <th>Skapad</th>
             </tr>
         </thead>
         <tbody>
-
+            <!--Loopar igenom det lagrade och skriver ut utifrån modellen-->
             @foreach (var item in Model)
             {
                 <tr>
@@ -33,6 +34,9 @@
                     </td>
                     <td>
                         @item.Priority
+                    </td>
+                    <td>
+                        @item.Description
                     </td>
                     <td>
                         @item.CreatedDate

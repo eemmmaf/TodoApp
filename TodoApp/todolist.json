@@ -1,56 +1,26 @@
 [
   {
-    "Id": 0,
-    "Name": "Blabla",
-    "Description": "dsadas",
-    "CreatedDate": "2023-02-06T12:30:29.6262298+01:00",
-    "Date": "2023-02-23T12:00:00",
-    "Priority": "Hög",
-    "Priorities": null
+    "Id": 222,
+    "Name": "Träna",
+    "Description": "Styrketräning ",
+    "CreatedDate": "2023-02-06T14:53:47.1706553+01:00",
+    "Date": "2023-02-07T16:53:00",
+    "Priority": "Hög"
   },
   {
-    "Id": 0,
-    "Name": "sss",
-    "Description": "Fiska med vänner",
-    "CreatedDate": "2023-02-06T12:30:29.626284+01:00",
-    "Date": "2023-02-14T12:00:00",
-    "Priority": "Hög",
-    "Priorities": null
+    "Id": 217,
+    "Name": "Laga mat",
+    "Description": "Göra matlådor inför veckan",
+    "CreatedDate": "2023-02-06T14:54:16.0240007+01:00",
+    "Date": "2023-02-06T18:54:00",
+    "Priority": "Hög"
   },
   {
-    "Id": 928,
-    "Name": "Blabla",
-    "Description": "dsadas",
-    "CreatedDate": "2023-02-06T12:30:29.6263074+01:00",
-    "Date": "2023-02-23T12:01:00",
-    "Priority": "Hög",
-    "Priorities": null
-  },
-  {
-    "Id": 211,
-    "Name": "Fiska",
-    "Description": "Fiska med vänner",
-    "CreatedDate": "2023-02-06T12:30:29.6263198+01:00",
-    "Date": "2023-02-09T12:55:00",
-    "Priority": "Hög",
-    "Priorities": null
-  },
-  {
-    "Id": 902,
-    "Name": "Fiska",
-    "Description": "Fiska med vänner",
-    "CreatedDate": "2023-02-06T12:30:29.6263396+01:00",
-    "Date": "2023-02-24T12:30:00",
-    "Priority": "Hög",
-    "Priorities": null
-  },
-  {
-    "Id": 203,
-    "Name": "Fiska",
-    "Description": null,
-    "CreatedDate": "2023-02-06T12:30:29.625593+01:00",
-    "Date": null,
-    "Priority": null,
-    "Priorities": null
+    "Id": 961,
+    "Name": "Handla",
+    "Description": "Veckohandling på Willys",
+    "CreatedDate": "2023-02-06T14:54:39.958671+01:00",
+    "Date": "2023-02-08T14:54:00",
+    "Priority": null
   }
 ]

@@ -21,7 +21,7 @@ namespace TodoApp.Models
 
         [Display(Name = "Beskrivning")]
         public string? Description { get; set; }
-        public DateTime? CreatedDate { get; }
+        public DateTime? CreatedDate { get; set; }
 
         [Display(Name = "Startdatum")]
         public DateTime? Date { get; set; }
@@ -29,24 +29,15 @@ namespace TodoApp.Models
         [Display(Name = "Prioritet")]
         public string? Priority { get; set; }
 
-        //Lista med val
-        public List<SelectListItem>? Priorities { get; }
-
-
         private Random rand = new Random();
 
 
 
         //----------Konstruktor--------------//
-        //Datum och tid blir den som är nu och id slumpas fram
+        //Id slumpas fram
         public Todos()
         {
-
-            CreatedDate = DateTime.Now;
             Id = rand.Next(1, 1000);
-
-
-
 
         }
 

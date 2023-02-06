@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="pagecontainer">
+        <div class="wrapper">
     <header>
         <div class="flex-between">
             <div>
@@ -24,7 +26,7 @@
                 <nav>
                     <ul>
                         <a asp-controller="Home" asp-action="List">
-                        <li>Lägg till i Listan</li>
+                        <li>Lägg till</li>
                         </a>
 
                         <a asp-controller="Home" asp-action="About">
@@ -41,10 +43,10 @@
         @RenderBody()
 
     </main>
-
-</body>
-
+</div>
 <footer>
     <p>Skapad av Emma Forslund</p>
 </footer>
+    </div>
+</body>
 </html>
