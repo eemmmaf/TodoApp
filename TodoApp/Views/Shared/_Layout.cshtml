@@ -14,20 +14,21 @@
         <div class="flex-between">
             <div>
                 <!--Logga-->
-                
-                  <a asp-controller="Home" asp-action="Index">
-                <img src="~/todo-logo.png" alt="" />
+
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/todo-logo.png" alt="" />
                 </a>
             </div>
             <div>
                 <!--Navigering-->
                 <nav>
                     <ul>
-                        <li>Listan</li>
-                            <a asp-controller="Home" asp-action="About">
+                        <a asp-controller="Home" asp-action="List">
+                        <li>Lägg till i Listan</li>
+                        </a>
 
+                        <a asp-controller="Home" asp-action="About">
                         <li>Om appen</li>
-
                         </a>
                     </ul>
                 </nav>

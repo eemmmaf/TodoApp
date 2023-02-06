@@ -9,7 +9,8 @@ namespace TodoApp
             //Aktiverar MVC
             builder.Services.AddControllersWithViews();
 
-
+            builder.Services.AddDistributedMemoryCache();
+           
             var app = builder.Build();
 
             //Aktiverar möjlighet att använda statiska filer

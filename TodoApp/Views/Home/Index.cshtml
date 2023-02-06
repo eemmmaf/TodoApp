@@ -1,6 +1,46 @@
-﻿
+﻿@model List<TodoApp.Models.Todos>
+
 @{
 
     //Dynamisk titel
     ViewData["Title"] = "Startsida";
 }
+
+<div class="list">
+    <h1>Att göra-listan</h1>
+    <!--Skriver ut listan-->
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Namn
+                </th>
+                <th>Datum</th>
+                <th>Prioritet</th>
+                <th>Skapad</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Date
+                    </td>
+                    <td>
+                        @item.Priority
+                    </td>
+                    <td>
+                        @item.CreatedDate
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>

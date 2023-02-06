@@ -1,0 +1,45 @@
+﻿@model TodoApp.Models.Todos
+
+@{
+
+    //Dynamisk titel
+    ViewData["Title"] = "Lägg till i Listan";
+}
+
+<h1>Lägg till i Listan</h1>
+
+
+<!--Lägga till i listan-->
+<form method="post">
+    <div class="form">
+        <div class="form-centered">
+
+
+                <!--Namn-->
+                <label asp-for="Name" class="control-label"></label><br />
+                <input asp-for="Name"><br />
+                <span asp-validation-for="Name" class="error"></span><br />
+
+                <!--Beskrivning-->
+                <label asp-for="Description" class="control-label"></label><br />
+            <input asp-for="Description"><br /><br />
+
+ 
+                <!--Datum-->
+                <label asp-for="Date" class="control-label"></label><br />
+                <input asp-for="Date"><br /><br />
+
+                <!--Prioritet-->
+                <label asp-for="Priority" class="control-label"></label><br />
+            <input asp-for="Priority"><br /><br />
+
+       
+
+
+
+            <input type="submit" value="Spara" class="btn" />
+        </div>
+    </div>
+
+</form>
+

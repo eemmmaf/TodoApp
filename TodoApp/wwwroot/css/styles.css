@@ -1,8 +1,8 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans&display=swap');
 
 
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
 html {
@@ -43,7 +43,7 @@ header {
     border-bottom: 1px solid #FF99F8;
 }
 
-img{
+img {
     max-width: 100px;
 }
 
@@ -81,4 +81,79 @@ footer {
     text-align: center;
     background-color: #FFD6FC;
     border-top: 1px solid #FF99F8;
+}
+
+/*Listan*/
+
+.list {
+    overflow-x: auto;
+}
+
+th {
+    font-size: 2rem;
+    color: #57405c;
+    border-bottom: 1px solid #c2b2a9;
+    border-top: 1px solid #c2b2a9;
+    padding: 1rem;
+}
+
+table {
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1.6rem;
+    border-bottom: 1px solid #c2b2a9;
+    padding: 1rem;
+}
+
+form{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #fae4f8;
+}
+
+label {
+    color: #230029;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.error {
+    color: darkred;
+    font-size: 1.6rem;
+}
+
+input[type="text"]
+{
+    max-width: 500px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+form div{
+    margin-top: 2rem;
+
+}
+
+.form-centered{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+input[type=submit] {
+    background-color: #230029;
+    color: white;
+    max-width: 150px;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 1rem;
+    font-size: 1.8rem;
 }
