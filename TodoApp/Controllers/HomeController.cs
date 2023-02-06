@@ -17,14 +17,11 @@ namespace TodoApp.Controllers
     public class HomeController : Controller
     {
 
-
+        //Startsidan
         public IActionResult Index()
         {
             //Läser in json
             var JsonString = System.IO.File.ReadAllText(@"todolist.json");
-
-
-
 
 
             //Konverterar till lista av typen Todos
@@ -34,6 +31,7 @@ namespace TodoApp.Controllers
             //Parameter-anpassning med json-objektet
             return View(JsonObj);
         }
+
 
         //Om appen-sida
         [Route("/omappen")]
